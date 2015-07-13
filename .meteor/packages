@@ -1,0 +1,23 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+semantic:ui
+flemay:less-autoprefixer
+meteorhacks:flow-router
+meteorhacks:flow-layout
+arillo:flow-router-helpers
+aldeed:collection2
+dburles:collection-helpers
+raix:handlebar-helpers
+matteodem:easy-security
+underscore
+browser-policy
+fastclick
+meteorhacks:fast-render
+useraccounts:semantic-ui
+accounts-password
+alanning:roles

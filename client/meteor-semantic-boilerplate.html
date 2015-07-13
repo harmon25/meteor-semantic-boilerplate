@@ -1,0 +1,47 @@
+<template name="home">
+  <button>Home</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="login">
+  {{> atForm state='signIn'}}
+</template>
+
+<template name="private">
+  <button>Private</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="navBar">
+
+<div class="ui menu">
+  <div class="header item">
+    CompTool
+  </div>
+  <a class="item {{isActiveRoute name='home'}}" href="{{pathFor '/home'}}">
+    Home
+  </a>
+  <a class="item {{isActiveRoute name='private'}}" href="{{pathFor '/private'}}">
+    Private
+  </a>
+  <div class="right item">
+   <a class="item signOut" href="{{pathFor '/'}}">
+    Logout
+  </a>
+</div>
+</div>
+</template>
+
+<template name="footer">
+  <p>Footer</p>
+</template>
+
+<template name="mainLayout">
+ {{> Template.dynamic template=top}}
+  {{> Template.dynamic template=content}}
+  {{> Template.dynamic template=foot}}
+</template>
+
+<template name="mainPublic">
+  {{> Template.dynamic template=content}}
+</template>
